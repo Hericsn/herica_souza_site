@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Aniversários</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #f5f5f5;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #111;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .galeria img {
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #ccc;
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aniversários</h1>
+    <p>Momentos especiais registrados em celebrações e festas</p>
+  </header>
+
+  <section class="galeria">
+    <!-- Certifique-se de que essas imagens EXISTEM na pasta imagens/aniversarios/ -->
+    <img src="imagens/aniversarios/foto12.jpg" alt="Aniversário 2">
+    <img src="imagens/aniversarios/foto13.jpg" alt="Aniversário 3">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Herica Souza</p>
+  </footer>
+
+</body>
+</html>

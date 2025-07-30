@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria - Retratos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .galeria-retratos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .galeria-retratos img {
+      width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria-retratos img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+  <style>
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+</style>
+</head>
+<body>
+  <!-- Botão flutuante do WhatsApp -->
+<a href="https://wa.me/5516981034242" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+  <header>
+    <h1>Retratos</h1>
+    <p>Expressões, sentimentos e identidade em foco</p>
+  </header>
+
+  <section class="galeria-retratos">
+    <img src="imagens/retratos/capa.jpg" alt="Retrato 1">
+    <!-- Adicione mais fotos aqui -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Herica Souza</p>
+  </footer>
+</body>
+</html>
