@@ -3,53 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio - Herica Souza</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #000;
+      background-color: #000;
       color: #f5f5f5;
     }
 
     header {
-      background: #000;
+      background-color: #000;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 20px 40px;
       flex-wrap: wrap;
     }
 
     .logo-container {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      gap: 15px;
     }
 
     .logo-container img {
-      width: 80px;
-      height: auto;
-      margin-bottom: 5px;
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
     }
 
-    .logo-container .logo-text {
-      text-align: left;
-      line-height: 1.2;
+    .logo-text {
+      display: flex;
+      flex-direction: column;
     }
 
-    .logo-container .logo-text h1 {
+    .logo-text h1 {
       margin: 0;
-      font-size: 20px;
+      font-size: 22px;
       color: #fff;
     }
 
-    .logo-container .logo-text span {
+    .logo-text span {
       font-size: 14px;
       color: #aaa;
     }
 
-    header .descricao {
+    .descricao {
       text-align: right;
       font-size: 14px;
       color: #ccc;
@@ -62,8 +61,8 @@
 
     h2 {
       text-align: center;
-      margin-bottom: 30px;
       color: #fff;
+      margin-bottom: 30px;
     }
 
     .galerias {
@@ -74,12 +73,11 @@
     }
 
     .galerias a {
-      text-align: center;
       text-decoration: none;
       color: #fff;
       width: 220px;
+      text-align: center;
       transition: transform 0.3s ease;
-      border-radius: 12px;
     }
 
     .galerias img {
@@ -87,11 +85,6 @@
       height: auto;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(255,255,255,0.1);
-    }
-
-    .galerias img.paisagem {
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
     }
 
     .galerias a:hover {
@@ -102,73 +95,56 @@
       background-color: #111;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
       color: #999;
-      margin-top: 40px;
+      font-size: 14px;
     }
 
-    /* Botão WhatsApp */
-    .whatsapp-float {
+    .whatsapp-float, .instagram-float {
       position: fixed;
       width: 60px;
       height: 60px;
       bottom: 20px;
-      right: 90px;
-      background-color: #25d366;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
       z-index: 1000;
-      transition: transform 0.3s ease;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp-float {
+      right: 90px;
+      background-color: #25d366;
     }
 
     .whatsapp-float:hover {
-      transform: scale(1.1);
       background-color: #128c7e;
     }
 
-    .whatsapp-float img {
+    .whatsapp-float img,
+    .instagram-float img {
       width: 35px;
       height: 35px;
     }
 
-    /* Botão Instagram */
     .instagram-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
       right: 20px;
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
-      transition: filter 0.3s ease;
     }
 
     .instagram-float:hover {
       filter: brightness(85%);
     }
-
-    .instagram-float img {
-      width: 32px;
-      height: 32px;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Botão WhatsApp -->
+  <!-- WhatsApp -->
   <a href="https://wa.me/5516988492886" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
 
-  <!-- Botão Instagram -->
+  <!-- Instagram -->
   <a href="https://www.instagram.com/hericasouzafotos/" class="instagram-float" target="_blank" title="Veja meu Instagram">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
   </a>
@@ -176,7 +152,7 @@
   <!-- Cabeçalho -->
   <header>
     <div class="logo-container">
-      <img src=logo.png" alt="Logo Herica Souza">
+      <img src="imagens/logo.png" alt="Logo Herica Souza">
       <div class="logo-text">
         <h1>Herica Souza</h1>
         <span>Fotos</span>
@@ -191,41 +167,33 @@
   <section>
     <h2>Minhas Galerias</h2>
     <div class="galerias">
-
       <a href="retratos.html">
-        <img src="retratos/capa.jpg" alt="Retratos">
+        <img src="imagens/retratos/capa.jpg" alt="Retratos">
         <p>Retratos</p>
       </a>
-
       <a href="urbano.html">
-        <img src="urbano/capa.jpg" alt="Urbano">
+        <img src="imagens/urbano/capa.jpg" alt="Urbano">
         <p>Urbano</p>
       </a>
-
       <a href="noite.html">
-        <img src="noite/capa.jpg" alt="Noite">
+        <img src="imagens/noite/capa.jpg" alt="Noite">
         <p>Noite</p>
       </a>
-
       <a href="natureza.html">
-        <img src="natureza/capa.jpg" alt="Natureza" class="paisagem">
+        <img src="imagens/natureza/capa.jpg" alt="Natureza">
         <p>Natureza</p>
       </a>
-
       <a href="festivais.html">
-        <img src="festivais/capa.jpg" alt="Festivais">
+        <img src="imagens/festivais/capa.jpg" alt="Festivais">
         <p>Festivais</p>
       </a>
-
       <a href="aniversarios.html">
-        <img src="aniversarios/capa.jpg" alt="Aniversários" class="paisagem">
+        <img src="imagens/aniversarios/capa.jpg" alt="Aniversários">
         <p>Aniversários</p>
       </a>
-
     </div>
   </section>
 
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 - Herica Souza</p>
   </footer>
